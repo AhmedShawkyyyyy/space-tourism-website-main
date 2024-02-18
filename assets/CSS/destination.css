@@ -176,7 +176,7 @@ nav .rightNav ul li a:hover {
   display: none !important;
 }
 #img {
-  width: 70% !important;
+  width: 75% !important;
 }
 
 /* <!-- sidebar --> */
@@ -264,6 +264,9 @@ nav .rightNav ul li a:hover {
   .container .row .col-12 .col-6 .col-8 h5 {
     font-size: 40px;
   }
+  #img {
+    width: 95% !important;
+  }
 }
 
 /* =========== */
@@ -308,6 +311,9 @@ nav .rightNav ul li a:hover {
   }
   .container .row .col-12 .col-6 .col-8 h5 {
     font-size: 60px;
+  }
+  #img {
+    width: 85% !important;
   }
 }
 
