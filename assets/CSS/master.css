@@ -62,8 +62,16 @@ nav .rightNav ul li a.active::after {
   width: 100% !important;
   height: 2px !important;
   background-color: #ffffff !important;
-  margin-top: 12px !important;
+  margin-top: 15px !important;
 }
+/* .active {
+  content: "" !important;
+  display: block !important;
+  width: 100% !important;
+  height: 2px !important;
+  background-color: #ffffff !important;
+  margin-top: 12px !important;
+} */
 nav a {
   text-decoration: none;
 }

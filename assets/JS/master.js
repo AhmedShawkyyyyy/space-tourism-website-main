@@ -29,17 +29,17 @@ function getActiveItem() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  navItems.forEach((item) => {
-    item.addEventListener("click", function () {
-      navItems.forEach((navItem) => navItem.classList.remove("active"));
-      this.classList.add("active");
+// document.addEventListener("DOMContentLoaded", function () {
+//   navItems.forEach((item) => {
+//     item.addEventListener("click", function () {
+//       navItems.forEach((navItem) => navItem.classList.remove("active"));
+//       this.classList.add("active");
 
-      setActiveItem();
-    });
-  });
+//       setActiveItem();
+//     });
+//   });
 
-  getActiveItem();
-});
+//   getActiveItem();
+// });
 
 // ==========================================

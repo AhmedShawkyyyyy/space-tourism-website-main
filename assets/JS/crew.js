@@ -80,17 +80,17 @@ function getActiveItem() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const navItems = document.querySelectorAll(".nav-item a");
-  navItems.forEach((item) => {
-    item.addEventListener("click", function () {
-      navItems.forEach((navItem) => navItem.classList.remove("active"));
-      this.classList.add("active");
-      this.style.color = "blue";
+// document.addEventListener("DOMContentLoaded", function () {
+//   const navItems = document.querySelectorAll(".nav-item a");
+//   navItems.forEach((item) => {
+//     item.addEventListener("click", function () {
+//       navItems.forEach((navItem) => navItem.classList.remove("active"));
+//       this.classList.add("active");
+//       this.style.color = "blue";
 
-      setActiveItem();
-    });
-  });
+//       setActiveItem();
+//     });
+//   });
 
-  getActiveItem();
-});
+//   getActiveItem();
+// });

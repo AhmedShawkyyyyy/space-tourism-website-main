@@ -13,7 +13,7 @@ body {
   color: #ffffff;
 }
 nav {
-  margin-top: 15px;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -89,10 +89,7 @@ nav .rightNav ul li a {
 nav .rightNav ul li a:hover {
   color: rgb(55, 0, 236) !important;
 }
-.active {
-  background-color: #ffffff;
-  color: black !important;
-}
+
 /* ====================================== */
 .container .row .col-12 p:only-child {
   color: #ffffff;
