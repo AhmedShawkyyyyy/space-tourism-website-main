@@ -244,18 +244,22 @@ nav .rightNav ul li a:hover {
   #card1 {
     width: 80%;
     margin: auto;
+    text-align: center;
   }
   #card2 {
-    width: 90%;
+    width: 100%;
     text-align: center;
   }
   #card2 .col-8 {
     width: 100%;
   }
-  /* .container .row .col-12 .title {
-    width: 100%;
-    margin-left: 50px;
-  } */
+  .container .row .col-12 .col-6 .col-8 .col-12 .description {
+    line-height: 1.2;
+  }
+  .container .row .col-12 .title {
+    font-size: 19px;
+    margin-top: 35px !important;
+  }
 
   .container .row .col-12 .col-6 .col-8 h5 {
     font-size: 40px;

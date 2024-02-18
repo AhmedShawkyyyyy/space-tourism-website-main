@@ -3,13 +3,11 @@ const marsSection = document.getElementById("marsSection");
 const europaSection = document.getElementById("europaSection");
 const titanSection = document.getElementById("titanSection");
 
-// Get references to the list items
 const moonLink = document.getElementById("moonLink");
 const marsLink = document.getElementById("marsLink");
 const europaLink = document.getElementById("europaLink");
 const titanLink = document.getElementById("titanLink");
 
-// Function to hide all sections
 function hideAllSections() {
   moonSection.style.display = "none";
   marsSection.style.display = "none";
@@ -17,23 +15,19 @@ function hideAllSections() {
   titanSection.style.display = "none";
 }
 
-// Initially hide all sections except for moon
 hideAllSections();
 moonSection.style.display = "block";
 
-// Event listener for Mars link
 marsLink.addEventListener("click", function () {
   hideAllSections();
   marsSection.style.display = "block";
 });
 
-// Event listener for Europa link
 europaLink.addEventListener("click", function () {
   hideAllSections();
   europaSection.style.display = "block";
 });
 
-// Event listener for Titan link
 titanLink.addEventListener("click", function () {
   hideAllSections();
   titanSection.style.display = "block";
@@ -59,11 +53,9 @@ function setActiveItem() {
   }
 }
 // =====================================================
-// Function to retrieve the active item from localStorage
 function getActiveItem() {
   let activeIndex = localStorage.getItem("activeNavItem");
   if (activeIndex === null) {
-    // If no active item is set in localStorage, default to the home page
     const homePage = document.querySelector(
       ".container .row .col-11 ul li.active::after"
     );
@@ -77,7 +69,6 @@ function getActiveItem() {
   }
 }
 
-// Add event listeners to each list item
 document.addEventListener("DOMContentLoaded", function () {
   const navItems = document.querySelectorAll(".container .row .col-11 ul li");
   navItems.forEach((item) => {
@@ -88,7 +79,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Retrieve and set the active item on page load
   getActiveItem();
 });
 moonLink.addEventListener("click", function () {

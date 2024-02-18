@@ -199,7 +199,7 @@ nav .rightNav ul li a:hover {
     flex-direction: column;
   }
   .container .row .col-12 .col-5 {
-    width: 100%;
+    width: 90%;
   }
   #emp-img {
     width: 100%;
