@@ -210,6 +210,7 @@ nav .rightNav ul li a:hover {
   }
   nav {
     width: 100%;
+    margin-top: 15px !important;
   }
   nav .rightNav {
     display: none !important;

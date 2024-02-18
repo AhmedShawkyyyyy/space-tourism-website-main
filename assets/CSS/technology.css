@@ -13,7 +13,7 @@ body {
   color: #ffffff;
 }
 nav {
-  margin-top: 50px;
+  margin-top: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -246,7 +246,9 @@ nav .rightNav ul li a:hover {
     text-align: center;
     cursor: pointer;
   }
-  #emp-img {
+  #emp-img-1,
+  #emp-img-2,
+  #emp-img-3 {
     width: 100%;
   }
 }

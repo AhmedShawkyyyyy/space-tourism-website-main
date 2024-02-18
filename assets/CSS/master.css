@@ -147,6 +147,7 @@ nav .rightNav ul li a:hover {
   }
   nav {
     width: 100%;
+    margin-top: 15px;
   }
   nav .rightNav {
     display: none !important;
@@ -162,6 +163,7 @@ nav .rightNav ul li a:hover {
   }
   .container {
     width: 90% !important;
+    margin-top: 10px !important;
   }
   .container .row {
     display: flex !important;
