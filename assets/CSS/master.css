@@ -230,7 +230,7 @@ nav .rightNav ul li a:hover {
 }
 
 /*  */
-@media (min-width: 1099px) and (max-width: 1299px) {
+@media (min-width: 1089px) and (max-width: 1299px) {
   body {
     background-image: url(../img/home/background-home-tablet.jpg);
     background-size: cover;

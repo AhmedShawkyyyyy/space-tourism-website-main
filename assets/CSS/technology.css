@@ -337,7 +337,7 @@ nav .rightNav ul li a:hover {
 }
 
 /* ============================================ */
-@media (min-width: 1091px) and (max-width: 1299px) {
+@media (min-width: 1089px) and (max-width: 1299px) {
   body {
     background-image: url(../img/technology/background-technology-tablet.jpg);
     background-size: cover;
