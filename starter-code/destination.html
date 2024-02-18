@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ===========icon============ -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+  <link rel="stylesheet" href="../vendors/fontawesome-free-6.4.2-web/css/all.min.css">
+  <!-- ===========CSS============ -->
+  <link rel="stylesheet" href="../assets/CSS/destination.css">
+  <link rel="stylesheet" href="../vendors/bootstrap.min.css">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+  <nav>
+    <div class="leftNav">
+      <ul>
+        <li class="mt-2"><img src="../assets/img/shared/logo.svg" alt=""></li>
+      </ul>
+    </div>
+
+    <!-- sidebar -->
+    <i class="fa-solid fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight">
+      <div class="sidebar" id="sidebar">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Space tourism website</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="nav justify-content-start">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html"><span class="me-2">00</span>
+                  HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../starter-code/destination.html"><span class="me-2">01</span> DESTINATION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../starter-code/crew-commander.html"><span class="me-2">02</span> CREW</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../starter-code/technology.html"><span class="me-2">03</span> TECHNOLOGY</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </i>
+    <!-- end of sidebar -->
+
+    </i></a>
+    <div class="rightNav">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html"><span class="me-2">00</span>
+            HOME</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../starter-code/destination.html"><span class="me-2">01</span> DESTINATION</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../starter-code/crew-commander.html"><span class="me-2">02</span> CREW</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../starter-code/technology.html"><span class="me-2">03</span> TECHNOLOGY</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h4 class="title mt-3"><span class="me-2">01</span> PICK YOUR DESTINATION</h4>
+      </div>
+      <div class="d-flex flex-nowrap justify-content-center align-items-center col-11">
+        <ul id="links " class="d-flex flex-nowrap justify-content-end align-items-center col-11">
+          <li id="moonLink" class="active">MOON</li>
+          <li id="marsLink">MARTH</li>
+          <li id="europaLink">EUROPE</li>
+          <li id="titanLink">TITAN</li>
+        </ul>
+      </div>
+      <!-- selections start from here -->
+      <!-- moon-->
+      <div id="moonSection" class="">
+        <div class=" col-12  d-flex flex-wrap justify-content-between align-items-center">
+          <div class=" col-5 card-1" id="card1">
+            <img class="img-fluid" src="../assets/img/destination/image-moon.png" alt="" id="img">
+          </div>
+          <div class="col-6" id="card2">
+            <div class="col-8 mt-5">
+              <div class="col-12 mt-5">
+                <h5 class="">MOON</h5>
+                <p class="description mt-5" id="description">
+                  See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective
+                  and
+                  come back
+                  refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing
+                  sites.
+                </p>
+              </div>
+              <hr class="mt-5">
+              <div class="col-12  d-flex flex-wrap justify-content-between align-items-center">
+                <div class="card1 col-5" id="">
+                  <div class="">
+                    <P>AVG. DISTANCE</P>
+                  </div>
+                  <div class="km">
+                    384,400 KM
+                  </div>
+                </div>
+                <div class="card1  col-5 ">
+                  <div class="" id="time">
+                    <P>EST. TRAVEL TIME</P>
+                  </div>
+                  <div class="time">
+                    3 DAYS
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mars-->
+      <div class="" id="marsSection">
+        <div class="col-12  d-flex flex-wrap justify-content-between align-items-center">
+          <div class="col-5 card-1" id="card1">
+            <img class="img-fluid" src="../assets/img/destination/image-mars.png" alt="" id="img">
+          </div>
+          <div class="col-6" id="card2">
+            <div class="col-8 mt-5">
+
+              <div class="col-12 mt-5">
+                <h5 class="">MARS</h5>
+                <p class="description mt-5" id="description">
+                  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest
+                  planetary mountain in our
+                  solar system. It’s two and a half times the size of Everest!
+                </p>
+              </div>
+              <hr class="mt-5">
+              <div class="col-12  d-flex flex-wrap justify-content-between align-items-center">
+                <div class="card1 col-5" id="">
+                  <div class="">
+                    <P>AVG. DISTANCE</P>
+                  </div>
+                  <div class="km">
+                    225 MIL KM
+                  </div>
+                </div>
+                <div class="card1  col-5 ">
+                  <div class="" id="time">
+                    <P>EST. TRAVEL TIME</P>
+                  </div>
+                  <div class="time">
+                    9 MONTHS
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Europa-->
+      <div class="" id="europaSection">
+        <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+          <div class="col-5 card-1" id="card1">
+            <img class="img-fluid" src="../assets/img/destination/image-europa.png" alt="" id="img">
+          </div>
+          <div class="col-6" id="card2">
+            <div class="col-8 mt-5">
+              <div class="col-12 mt-5">
+                <h5 class="">EUROPA</h5>
+                <p class="description mt-5" id="description">
+                  The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an
+                  icy
+                  surface, it’s
+                  perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.
+                </p>
+              </div>
+              <hr class="mt-5">
+              <div class="col-12  d-flex flex-wrap justify-content-between align-items-center">
+                <div class="card1 col-5" id="">
+                  <div class="">
+                    <P>AVG. DISTANCE</P>
+                  </div>
+                  <div class="km">
+                    628 MIL. KM
+                  </div>
+                </div>
+                <div class="card1  col-5 ">
+                  <div class="" id="time">
+                    <P>EST. TRAVEL TIME</P>
+                  </div>
+                  <div class="time">
+                    3 YEARS
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TITAN-->
+      <div class="" id="titanSection">
+        <div class="col-12  d-flex flex-wrap justify-content-between align-items-center">
+          <div class="col-5 card-1" id="card1">
+            <img class="img-fluid" src="../assets/img/destination/image-titan.png" alt="" id="img">
+          </div>
+          <div class="col-6" id="card2">
+            <div class="col-8 mt-5">
+              <div class="col-12 mt-5">
+                <h5 class="">TITAN</h5>
+                <p class="description mt-5" id="description">
+                  The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just
+                  a
+                  few hundred
+                  degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
+                </p>
+              </div>
+              <hr class="mt-5">
+              <div class="col-12  d-flex flex-wrap justify-content-between align-items-center">
+                <div class="card1 col-5" id="">
+                  <div class="">
+                    <P>AVG. DISTANCE</P>
+                  </div>
+                  <div class="km">
+                    1.6 BIL. KM
+                  </div>
+                </div>
+                <div class="card1  col-5 ">
+                  <div class="" id="time">
+                    <P>EST. TRAVEL TIME</P>
+                  </div>
+                  <div class="time">
+                    7 YEARS
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+<script src="../assets/JS/destination.js">  </script>
+<script src="../vendors/bootstrap.bundle.min.js">  </script>
+
+</html>

@@ -1,0 +1,272 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  background-image: url(../img/home/background-home-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+nav {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "math";
+}
+.leftNav::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 564px;
+  left: 150px;
+  top: 37px;
+  border-bottom: 1.5px solid gray;
+  z-index: 351351351351;
+}
+
+nav .leftNav {
+  width: 25%;
+  display: inline-block;
+  position: relative;
+}
+
+nav .leftNav ul {
+  list-style-type: none;
+}
+
+nav .rightNav {
+  width: 55%;
+  flex-wrap: wrap;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: rgb(87 104 136 / 34%);
+  backdrop-filter: blur(14px);
+  height: 80px;
+  text-align: center !important;
+  margin-bottom: 0 !important;
+}
+
+nav .rightNav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  text-align: center !important;
+  margin-bottom: 0 !important;
+}
+nav .rightNav ul li a.active::after {
+  content: "" !important;
+  display: block !important;
+  width: 100% !important;
+  height: 2px !important;
+  background-color: #ffffff !important;
+  margin-top: 12px !important;
+}
+nav a {
+  text-decoration: none;
+}
+nav i {
+  display: none !important;
+  color: #ffff;
+  font-size: 40px;
+}
+nav .rightNav ul li a {
+  color: #fff;
+  text-align: center !important;
+  margin-top: 20px !important;
+  margin-right: 25px;
+  font-size: 20px;
+  font-family: sans-serif;
+  transform: scale(1, 1.3);
+}
+nav .rightNav ul li a:hover {
+  color: rgb(55, 0, 236) !important;
+}
+/* ======================================== */
+.container {
+  margin-top: 50px;
+}
+.container .row .col-4 {
+  margin-top: 80px;
+  color: #fff;
+}
+
+.container .row .col-4 title {
+  font-size: 50x;
+  color: #840000;
+}
+
+.container .row .col-4 span {
+  font-size: 150px;
+}
+
+.container .row .col-4 .description {
+  font-size: 15px;
+  letter-spacing: 1.3px;
+  text-align: justify;
+}
+/* ======================================== */
+
+#explore {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  margin-top: 100px;
+  border: none;
+}
+/* <!-- sidebar --> */
+
+#sidebar {
+  color: rgb(226, 223, 223);
+  text-align: left;
+}
+
+.offcanvas {
+  color: black !important;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
+  background: url(../img/destination/background-destination-mobile.jpg) !important;
+  background-size: cover !important;
+  background-position: fixed !important;
+  background-repeat: no-repeat !important;
+}
+.offcanvas-title {
+  color: #5a5a5a;
+}
+
+/* <!-- end of sidebar --> */
+/* ======================================== */
+
+@media (max-width: 567px) {
+  body {
+    background-image: url(../img/home/background-home-mobile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  nav {
+    width: 90%;
+  }
+  nav .rightNav {
+    display: none !important;
+  }
+  .leftNav::after {
+    display: none !important;
+  }
+
+  nav i {
+    display: block !important;
+    margin-right: 30px !important;
+    font-size: 30px !important;
+  }
+  .container {
+    width: 90% !important;
+  }
+  .container .row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin: auto !important;
+  }
+  .container .row .col-4 {
+    width: 100%;
+  }
+  .container .row .col-4 span {
+    font-size: 80px;
+  }
+  .container .row .col-4 .description {
+    font-size: 10px;
+  }
+  .container .row .col-6 {
+    width: 100% !important;
+  }
+}
+
+/* =========== */
+
+@media (min-width: 568px) and (max-width: 1088px) {
+  body {
+    background-image: url(../img/home/background-home-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  nav .rightNav {
+    display: none !important;
+  }
+  .leftNav::after {
+    display: none !important;
+  }
+
+  nav i {
+    display: block !important;
+    margin-right: 60px !important;
+    font-size: 30px !important;
+  }
+  /* .container {
+    width: 90% !important;
+    margin: auto !important;
+  } */
+  .container .row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin: auto !important;
+  }
+  .container .row .col-4 {
+    width: 50%;
+  }
+  .container .row .col-4 span {
+    font-size: 80px;
+  }
+  .container .row .col-4 .description {
+    font-size: 10px;
+  }
+  .container .row .col-6 {
+    width: 50% !important;
+  }
+}
+
+/*  */
+@media (min-width: 1099px) and (max-width: 1299px) {
+  body {
+    background-image: url(../img/home/background-home-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .leftNav::after {
+    width: 335px;
+  }
+  nav .rightNav ul li a {
+    margin-right: 5px;
+    font-size: 17px;
+  }
+
+  nav i {
+    display: none !important;
+    margin-right: 60px !important;
+    font-size: 30px !important;
+  }
+  nav .rightNav {
+    width: 62%;
+  }
+  .container .row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin: auto !important;
+  }
+  .container .row .col-4 {
+    width: 50%;
+  }
+  .container .row .col-4 span {
+    font-size: 120px;
+  }
+  .container .row .col-4 .description {
+    font-size: 20px;
+  }
+  .container .row .col-6 {
+    width: 50% !important;
+  }
+}

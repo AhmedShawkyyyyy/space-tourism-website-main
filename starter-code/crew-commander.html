@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ===========icon============ -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+  <link rel="stylesheet" href="../vendors/fontawesome-free-6.4.2-web/css/all.min.css">
+  <!-- ===========CSS============ -->
+  <link rel="stylesheet" href="../assets/CSS/crew.css">
+  <link rel="stylesheet" href="../vendors/bootstrap.min.css">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+  <nav>
+    <div class="leftNav">
+      <ul>
+        <li class="mt-2"><img src="../assets/img/shared/logo.svg" alt=""></li>
+      </ul>
+    </div>
+    <!-- sidebar -->
+    <i class="fa-solid fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight">
+      <div class="sidebar" id="sidebar">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Space tourism website</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="nav justify-content-start">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html"><span class="me-2">00</span>
+                  HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./destination.html"><span class="me-2">01</span> DESTINATION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./crew-commander.html"><span class="me-2">02</span> CREW</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./technology.html"><span class="me-2">03</span> TECHNOLOGY</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </i>
+    <!-- end of sidebar -->
+    <div class="rightNav">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html"><span class="me-2">00</span>
+            HOME</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./destination.html"><span class="me-2">01</span> DESTINATION</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./crew-commander.html"><span class="me-2">02</span> CREW</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./technology.html"><span class="me-2">03</span> TECHNOLOGY</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mt-5 ">
+        <p><span class="me-2">01</span> MEET YOUR CREW</p>
+      </div>
+      <div class="col-12 card1 mt-5 ">
+        <p class="title"></p>
+      </div>
+      <div class="col-6">
+        <div class="indicatores ms-3" id="indicatores">
+          <i class="fa fa-circle active me-1" id="indicator1"></i>
+          <i class="fa fa-circle ms-3" id="indicator2"></i>
+          <i class="fa fa-circle ms-3" id="indicator3"></i>
+          <i class="fa fa-circle ms-3" id="indicator4"></i>
+        </div>
+      </div>
+      <!-- selections start from here -->
+      <!--victor  -->
+      <div id="victor" class="card2">
+        <div class="col-12 d-flex flex-wrap  justify-content-between align-items-center">
+          <div class="col-5">
+            <p class="role" id="role">PILOT</p>
+            <p class="name" id="name">VICTOR GLOVER</p>
+            <p class="desc mt-4" id="desc">Pilot on the first operational flight of the SpaceX Crew Dragon to the
+              International Space Station. Glover is a
+              commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as
+              a station
+              systems flight engineer.</p>
+          </div>
+          <div class="col-5">
+            <div class="col-12">
+              <img id="emp-img-victor" src="../assets/img/crew/image-victor-glover.png" alt="" class="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- anoushah-->
+      <div id="anoushah" class="card2">
+        <div class="col-12 d-flex flex-wrap  justify-content-between align-items-center">
+          <div class="col-5">
+            <p class="role" id="role">FLIGHT ENGINEER</p>
+            <p class="name" id="name">ANOUSHEH ANSARI</p>
+            <p class="desc " id="desc">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea
+              Systems.
+              Ansari was the
+              fourth self-funded
+              space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.</p>
+          </div>
+          <div class="col-5">
+            <div class="col-12">
+              <img id="emp-img" src="../assets/img/crew/image-anousheh-ansari.png" alt="" class="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--douglas  -->
+      <div id="douglas" class="card2">
+        <div class="col-12 d-flex flex-wrap  justify-content-between align-items-center">
+          <div class="col-5">
+            <p class="role" id="role">COMMANDER</p>
+            <p class="name" id="name">DOUGLAS HURLY</p>
+            <p class="desc mt-4" id="desc">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and
+              former NASA astronaut. He launched into
+              space for the third time as commander of Crew Dragon Demo-2</p>
+          </div>
+          <div class="col-5">
+            <div class="col-12">
+              <img id="emp-img-douglas" src="../assets/img/crew/image-douglas-hurley.png" alt="" class="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--MARK  -->
+      <div id="mark" class="card2">
+        <div class="col-12 d-flex flex-wrap  justify-content-between align-items-center">
+          <div class="col-5">
+            <p class="role" id="role">MISSION SPECIALIST</p>
+            <p class="name" id="name">MARK SHUTTLEWORTH</p>
+            <p class="desc mt-4" id="desc">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company
+              behind the Linux-based Ubuntu operating
+              system. Shuttleworth became the first South African to travel to space as a space tourist.</p>
+          </div>
+          <div class="col-5">
+            <div class="col-12">
+              <img id="emp-img-mark" src="../assets/img/crew/image-mark-shuttleworth.png" alt="" class="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+<script src="../assets/JS/crew.js">  </script>
+<script src="../vendors/bootstrap.bundle.min.js">  </script>
+
+</html>

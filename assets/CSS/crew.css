@@ -1,0 +1,282 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  background-image: url(../img/crew/background-crew-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+nav {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "math";
+}
+.leftNav::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 564px;
+  left: 150px;
+  top: 37px;
+  border-bottom: 1.5px solid gray;
+  z-index: 351351351351;
+}
+
+nav .leftNav {
+  width: 25%;
+  display: inline-block;
+  position: relative;
+}
+
+nav .leftNav ul {
+  list-style-type: none;
+}
+
+nav .rightNav {
+  width: 55%;
+  flex-wrap: wrap;
+  justify-content: center !important; /* Change from space-around to center */
+  align-items: center !important;
+  background-color: rgb(87 104 136 / 34%);
+  backdrop-filter: blur(14px);
+  height: 80px;
+  text-align: center !important;
+  margin-bottom: 0 !important;
+}
+
+nav .rightNav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  text-align: center !important;
+  margin-bottom: 0 !important;
+}
+nav .rightNav ul li a.active::after {
+  content: "" !important;
+  display: block !important;
+  width: 100% !important;
+  height: 2px !important;
+  background-color: #ffffff !important;
+  margin-top: 12px !important;
+}
+nav a {
+  text-decoration: none;
+}
+nav i {
+  display: none !important;
+  color: #ffff;
+  font-size: 40px;
+}
+nav .rightNav ul li a {
+  color: #fff;
+  text-align: center !important;
+  margin-top: 20px !important;
+  margin-right: 25px;
+  font-size: 20px;
+  font-family: sans-serif;
+  transform: scale(1, 1.3);
+}
+nav .rightNav ul li a:hover {
+  color: rgb(55, 0, 236) !important;
+}
+
+/* ============================= */
+
+.container .row .col-12 p:only-child {
+  color: #ffffff;
+  transform: scale(1, 2);
+  letter-spacing: 4px;
+}
+.container .row .col-12 span {
+  color: gray;
+  font-weight: bold;
+}
+
+#role {
+  color: gray;
+  font-size: 25px;
+  font-family: serif;
+  transform: scale(1, 2);
+}
+
+#name {
+  color: #ffffff;
+  font-size: 30px;
+  transform: scale(1, 2.8);
+  font-family: sans-serif;
+  margin-top: 33px;
+  letter-spacing: 4px;
+}
+
+#desc {
+  color: #ffffff;
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+#emp-img {
+  width: 100%;
+  object-fit: contain;
+}
+#emp-img-victor {
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+}
+#emp-img-douglas {
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+}
+#emp-img-mark {
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+}
+
+#indicatores {
+  color: #777777;
+  margin-top: 50px;
+  position: fixed;
+  bottom: 15px;
+  left: 95px;
+  cursor: pointer;
+}
+
+/* <!-- sidebar --> */
+
+#sidebar {
+  color: rgb(226, 223, 223);
+  text-align: left;
+}
+
+.offcanvas {
+  color: black !important;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
+  background: url(../img/destination/background-destination-mobile.jpg) !important;
+  background-size: cover !important;
+  background-position: fixed !important;
+  background-repeat: no-repeat !important;
+}
+.offcanvas-title {
+  color: #5a5a5a;
+}
+
+/* ====================== */
+
+@media (max-width: 567px) {
+  body {
+    background-image: url(../img/crew/background-crew-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  nav {
+    width: 100%;
+  }
+  nav .rightNav {
+    display: none !important;
+  }
+  .leftNav::after {
+    display: none !important;
+  }
+
+  nav i {
+    display: block !important;
+    margin-right: 30px !important;
+    font-size: 30px !important;
+  }
+  .container .row .col-12 {
+    flex-direction: column;
+  }
+  .container .row .col-12 .col-5 {
+    width: 100%;
+  }
+  #emp-img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+/* =========== */
+
+@media (min-width: 568px) and (max-width: 856px) {
+  body {
+    background-image: url(../img/crew/background-crew-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  nav .rightNav {
+    display: none !important;
+  }
+  .leftNav::after {
+    display: none !important;
+  }
+
+  nav i {
+    display: block !important;
+    margin-right: 60px !important;
+    font-size: 30px !important;
+  }
+  .container .row .col-12 {
+    flex-direction: column;
+  }
+  .container .row .col-12 .col-5 {
+    width: 100%;
+  }
+  #emp-img {
+    width: 100%;
+    object-fit: contain;
+  }
+  #indicatores {
+    margin-top: 15px;
+  }
+}
+
+/*  */
+@media (min-width: 857px) and (max-width: 1299px) {
+  body {
+    background-image: url(../img/crew/background-crew-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  nav .rightNav {
+    display: none !important;
+  }
+  .leftNav::after {
+    display: none !important;
+  }
+
+  nav i {
+    display: block !important;
+    margin-right: 60px !important;
+    font-size: 30px !important;
+  }
+  .container .row .col-12 {
+    flex-wrap: wrap;
+  }
+  .container .row .col-12 .col-5 {
+    width: 40%;
+  }
+  #name {
+    color: #ffffff;
+    font-size: 20px;
+    transform: scale(1, 2.8);
+    font-family: sans-serif;
+    margin-top: 33px;
+    letter-spacing: 4px;
+  }
+}

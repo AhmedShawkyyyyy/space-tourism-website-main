@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ===========icon============ -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+  <link rel="stylesheet" href="./vendors/fontawesome-free-6.4.2-web/css/all.min.css">
+  <!-- ===========CSS============ -->
+  <link rel="stylesheet" href="./assets/CSS/master.css">
+  <link rel="stylesheet" href="./vendors/bootstrap.min.css">
+
+  <!-- ===========JQUERY============ -->
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
+    integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+  <nav>
+    <div class="leftNav">
+      <ul>
+        <li class="mt-2"><img src="./assets/img/shared/logo.svg" alt=""></li>
+      </ul>
+    </div>
+    <!-- sidebar -->
+    <i class="fa-solid fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight">
+      <div class="sidebar" id="sidebar">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Space tourism website</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="nav justify-content-start">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html"><span class="me-2">00</span>
+                  HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./starter-code/destination.html"><span class="me-2">01</span> DESTINATION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./starter-code/crew-commander.html"><span class="me-2">02</span> CREW</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./starter-code/technology.html"><span class="me-2">03</span> TECHNOLOGY</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </i>
+
+    <!-- end of sidebar -->
+
+    <div class="rightNav">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html"><span class="me-2">00</span>
+            HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./starter-code/destination.html"><span class="me-2">01</span> DESTINATION</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./starter-code/crew-commander.html"><span class="me-2">02</span> CREW</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./starter-code/technology.html"><span class="me-2">03</span> TECHNOLOGY</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row d-flex flex-wrap  justify-content-between align-items-end">
+      <div class="col-4  mt-5">
+        <div class="title"> SO, YOU WANT TO TRAVEL TO </div>
+        <span class="text-center w-100">SPACE</span>
+        <p class=" description">
+          Let’s face it; if you want to go to space, you might as well genuinely go to
+          outer space and not hover kind of on the edge of it. Well sit back, and relax
+          because we’ll give you a truly out of this world experience!
+        </p>
+      </div>
+
+      <div class="col-6 text-center">
+        <button id="explore">EXPLORE <a href="https://www.nasa.gov"></a></button>
+      </div>
+    </div>
+  </div>
+
+</body>
+<!--  JS -->
+<script src="./assets/JS/master.js">  </script>
+<script src="./vendors/bootstrap.bundle.min.js">  </script>
+
+
+</html>
