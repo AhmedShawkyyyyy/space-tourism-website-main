@@ -206,6 +206,20 @@ nav .rightNav ul li a:hover {
     width: 100%;
     object-fit: contain;
   }
+  #name {
+    font-size: 30px;
+    transform: scale(1, 1);
+    margin-bottom: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  #desc {
+    text-align: center;
+  }
+  #role {
+    font-size: 26px;
+    transform: scale(1, 1.5);
+  }
 }
 
 /* =========== */
