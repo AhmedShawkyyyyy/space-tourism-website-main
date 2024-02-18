@@ -137,6 +137,7 @@ nav .rightNav ul li a:hover {
   height: 100px;
   top: 39%;
   left: 10px;
+  z-index: 65465435435351;
 }
 #indicatores .indicator1,
 #indicatores .indicator2,
