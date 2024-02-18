@@ -15,11 +15,10 @@ function setActiveItem() {
     localStorage.setItem("activeNavItem", activeIndex.toString());
   }
 }
-
+// ==========================================
 function getActiveItem() {
   let activeIndex = localStorage.getItem("activeNavItem");
   if (activeIndex === null) {
-    // Default to the home page
     const homePage = document.querySelector(".nav-item a.active");
     homePage.classList.add("active");
     setActiveItem();
@@ -36,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
       navItems.forEach((navItem) => navItem.classList.remove("active"));
       this.classList.add("active");
 
-      // No need to set color here if it's handled by CSS for the .active class
       setActiveItem();
     });
   });

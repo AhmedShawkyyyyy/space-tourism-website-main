@@ -2,29 +2,26 @@ document.addEventListener("DOMContentLoaded", function () {
   const indicators = document.querySelectorAll(".indicatores i");
   const sections = document.querySelectorAll(".card2");
 
-  // Function to hide all sections
   function hideSections() {
     sections.forEach((section) => {
       section.style.display = "none";
     });
   }
 
-  // Function to remove active class from all indicators and reset their colors
   function resetIndicators() {
     indicators.forEach((indicator) => {
       indicator.classList.remove("active");
-      indicator.style.color = ""; // Reset color to default
+      indicator.style.color = "";
     });
   }
 
-  // Function to show the selected section and apply active class and white color to the corresponding indicator
   function showSection(sectionId, indicatorId) {
     hideSections();
     resetIndicators();
     document.getElementById(sectionId).style.display = "block";
     const indicator = document.getElementById(indicatorId);
     indicator.classList.add("active");
-    indicator.style.color = "white"; // Apply white color to the selected indicator
+    indicator.style.color = "white";
   }
 
   // Event listener for each indicator
@@ -36,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Show the first section and apply active class and white color to the first indicator on page load
   showSection("victor", "indicator1");
 });
 function showSection(sectionId, indicatorId) {
@@ -47,11 +43,9 @@ function showSection(sectionId, indicatorId) {
   indicator.classList.add("active");
   indicator.style.color = "white";
 
-  // Scroll to the selected section smoothly
   document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
 }
 
-// nav functions////////////////
 const navItems = document.querySelectorAll(".nav-item a");
 const indicator = document.querySelector(
   ".nav .rightNav ul li a.active::after"
@@ -72,11 +66,9 @@ function setActiveItem() {
   }
 }
 
-// Function to retrieve the active item from localStorage
 function getActiveItem() {
   let activeIndex = localStorage.getItem("activeNavItem");
   if (activeIndex === null) {
-    // If no active item is set in localStorage, default to the home page
     const homePage = document.querySelector(".nav-item a.active");
     homePage.classList.add("active");
     setActiveItem();
@@ -88,7 +80,6 @@ function getActiveItem() {
   }
 }
 
-// Add event listeners to each list item
 document.addEventListener("DOMContentLoaded", function () {
   const navItems = document.querySelectorAll(".nav-item a");
   navItems.forEach((item) => {
@@ -101,6 +92,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Retrieve and set the active item on page load
   getActiveItem();
 });
