@@ -229,10 +229,14 @@ nav .rightNav ul li a:hover {
   }
   .container .row .col-11 {
     margin-bottom: 30px;
+    width: 100% !important;
   }
   .container .row .col-11 ul {
-    margin-right: 60px;
-    margin-top: 20px;
+    margin-right: 0px;
+    margin-top: 37px;
+  }
+  .container .row .col-11 ul li {
+    margin-right: 13px;
   }
   .container {
     width: 90% !important;

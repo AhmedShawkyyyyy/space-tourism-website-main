@@ -141,12 +141,12 @@ nav .rightNav ul li a:hover {
 @media (max-width: 567px) {
   body {
     background-image: url(../img/home/background-home-mobile.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
   nav {
-    width: 90%;
+    width: 100%;
   }
   nav .rightNav {
     display: none !important;
