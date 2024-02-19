@@ -148,8 +148,9 @@ nav .rightNav ul li a:hover {
   text-align: center;
   cursor: pointer;
 }
-.indicator {
-  background-color: transparent;
+#indicatores .active {
+  background-color: #ffffff;
+  color: black;
 }
 /* <!-- sidebar --> */
 
@@ -248,6 +249,10 @@ nav .rightNav ul li a:hover {
   #emp-img-3 {
     width: 100%;
   }
+  #indicatores .active {
+    background-color: #ffffff;
+    color: black;
+  }
 }
 
 /* ==================================== */
@@ -331,6 +336,10 @@ nav .rightNav ul li a:hover {
   #emp-img-3 {
     width: 100%;
   }
+  #indicatores .active {
+    background-color: #ffffff;
+    color: black;
+  }
 }
 
 /* ============================================ */
@@ -361,5 +370,9 @@ nav .rightNav ul li a:hover {
     margin-right: 5px;
     font-size: 15px;
     font-family: sans-serif;
+  }
+  #indicatores .active {
+    background-color: #ffffff;
+    color: black;
   }
 }
